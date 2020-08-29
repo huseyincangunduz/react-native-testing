@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
         fontFamily: "'Poppins', sans-serif",
         flex: 1,
         flexGrow: 1,
-        backgroundColor: '#111111',
+        // backgroundColor: '#111111',
+        backgroundColor: '#ffffff',
         flexDirection: "column"
     },
     content: {
@@ -88,7 +89,7 @@ export class MainView extends Component {
 
                     <View style={styles.titleBar}>
                         <Text style={{ fontSize: 20, fontWeight: "bold" }}>
-                            {`Morphosium FCK \n(Fucking-Controll Kit)`}
+                            {`Morphosium FCK \n(Fudging-Controll Kit)`}
                         </Text>
 
                         <TouchableNativeFeedback style={styles.titleBarItem} onPress={() => alert("Yardım metni bulunamaıd")}
@@ -103,7 +104,7 @@ export class MainView extends Component {
                     </View>
 
                     <View style={styles.content}>
-                        <Image style={{ height: 100, width: window.innerWidth, tintColor: "#fff" }} resizeMethod={"scale"}
+                        <Image style={{ height: 100, width: window.innerWidth, }} resizeMethod={"scale"}
                             source={require("../assets/morphosium.png")}></Image>
                         <View style={styles.buttonStyle} >
                             <Button onPress={this.testMethod} title="method"> </Button>
