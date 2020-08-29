@@ -20,13 +20,16 @@ const styles = StyleSheet.create({
     },
     titleBarItem: {
         height: "100%",
-
+        position: "relative"
     },
     titleBarItemInner: {
-        height: "100%",
-        padding: 5, borderRadius: 100,
-        display: "flex",
-        alignItems: "center"
+        padding: 5,
+        borderRadius: 100,
+    },
+    titleBarItemInnerText: {
+        textAlign: "center",
+        textAlignVertical: "center",
+        flex: 1
     },
     titleBar: {
         backgroundColor: "green",
@@ -38,7 +41,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        shadowColor: "#fff",
+        shadowColor: "#ffffff",
         shadowOffset: {
             width: 0,
             height: 3,
@@ -92,7 +95,7 @@ export class MainView extends Component {
                             background={TouchableNativeFeedback.Ripple('#fff')}>
                             {/* @ts-ignore */}
                             <View style={styles.titleBarItemInner}>
-                                <Text>Yardım</Text>
+                                <Text style={styles.titleBarItemInnerText}>Yardım</Text>
                             </View>
 
                         </TouchableNativeFeedback>
